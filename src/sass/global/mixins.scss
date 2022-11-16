@@ -1,0 +1,42 @@
+@mixin list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin button-reset {
+    background-color: transparent;
+    border: none;
+}
+
+@mixin button {
+    @include button-reset;
+    cursor: pointer;
+}
+
+@mixin link-reset {
+    text-decoration: none;
+}
+
+@mixin default-link {
+    @include link-reset;
+}
+
+@mixin default-title {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin wrapper-desktop {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@mixin wrapper-mobile {
+    padding: 0 18px;
+}
+
+@mixin wrapper-tablet {
+    padding: 0 38px;
+}
