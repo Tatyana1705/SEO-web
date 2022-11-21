@@ -1,0 +1,41 @@
+
+
+
+.main-header__img
+{
+    width: 130px; 
+    height: 67px;
+};
+
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+}
+
+.menu-burger__header span{
+    top: 21px;
+}
+
+.menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+}
+
+.menu-burger__header:after{
+    bottom: 5px;
+}
+
+.menu-burger__header:before{
+    top: 5px;
+}
+
+.menu-burger__header {
+    position: relative; /* задаем относительное позиционирование */
+    width: 40px; /* определяем размеры блока */
+    height: 35px;
+    display: block;
+    margin-left: 10px;
+}
+
