@@ -1,7 +1,7 @@
 {
-    "name": "vashaplatforma",
+    "name": "SEOnika",
     "private": true,
-    "description": "Корпоративный сайт Platforma",
+    "description": "Сайт SEO",
     "devDependencies": {
         "@babel/core": "^7.18.10",
         "@babel/plugin-transform-runtime": "^7.18.10",
