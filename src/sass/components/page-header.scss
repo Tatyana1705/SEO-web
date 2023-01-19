@@ -1,0 +1,21 @@
+.page-header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 462px;
+    margin: 0;
+    background-color: $submenu-color;
+
+    @media (min-width: $desktop) {
+        background-color: transparent;
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+    }    
+}
