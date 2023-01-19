@@ -1,53 +1,47 @@
 
 .submenu {
     display: block;
-    position: absolute;
-    top: 128px;
-    width: 272px;
-    height: 230px;
-    background: #4953AA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -7px 7px 0px #5DA6E1;
-    border-radius: 10px;
-    padding: 60px 50px 60px 50px;
-    
-}
 
-/* .submenu{
-    position: relative;
-}
-left: 750px;
-.submenu__list{
-        z-index: 100;
+    @media (min-width: $desktop) {
         display: block;
         position: absolute;
-        width: 350px;
-        height: 100%;
-        background: $submenu-color;
-        font-size: 20px;
-        line-height: 26px;
-        text-align: center; */
-   
-    /* @media (min-width: $desktop) {
-        position: absolute;
-        margin: 5px 16px;
-        width: 392px;
-        height: 330px;
+        top: 128px;
+        width: 272px;
+        height: 230px;
         background: #4953AA;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -7px 7px 0px #5DA6E1;
         border-radius: 10px;
-        font-size: 20px;
-        line-height: 26px;
-        text-align: center;
-    } */
-/* }
+        padding: 60px 50px 60px 50px;
+    }
+}
 
-.submenu__list li{
+.submenu__item {
+    display: block;
     list-style-type: none;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 30px;
+    }
 }
 
-.submenu__list ul{
-    padding-left: 0;
+.submenu__link {
+    font-size: 20px;
+    line-height: 27px;
+    color: $fonts-color;
+    margin: 0;
+    text-decoration: none;
 }
- */
 
+.submenu__link:hover{
+    color: #7785FF;
+}
+
+.submenu__link:active{
+    color: #7785FF;
+}
+
+.submenu__link:disabled{
+    color: $disabled;
+}

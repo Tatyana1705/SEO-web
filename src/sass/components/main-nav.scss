@@ -1,19 +1,19 @@
 
 .main-nav__list {
-
     margin: 0;
     padding:105px 40px 105px 40px;
+
     @media (min-width: $desktop) {
-    padding:0px;
-    display:flex;
+        padding:0px;
+        display:flex;
     }
 }
 
 .main-nav__item {
-    
     list-style-type: none;
     margin-bottom: 20px;
     font-weight: 700;
+
     @media (min-width:$tablet) {
         text-align: center;
     }
@@ -29,80 +29,23 @@
     font-size: 21px;
     line-height: 27px;
     color: $fonts-color;
-    margin: 0;   
-    text-decoration: none; 
+    margin: 0;
+    text-decoration: none;
 }
 
-.submenu__item {
-    list-style-type: none;
-    margin-bottom: 15px;
-    font-weight: 400;
-    @media (min-width: $desktop) {
-        margin-bottom: 30px;
-    }
+.main-nav__link:hover{
+    color: #7785FF;
 }
 
-.submenu__link {
-    font-size: 20px;
-    line-height: 27px;
-    color: $fonts-color;
-    margin: 0;   
-    text-decoration: none; 
+.main-nav__link:active{
+    color: #7785FF;
+}
+
+.main-nav__link:disabled{
+    color: $disabled;
 }
 
 .main-nav__submenu {    
     padding: 0;
     
 }
-
-
-/* .menu {
-        display: block;
-        margin-top:1px;
-        background-color: $submenu-color; */
-        
-    /* @media (min-width:$tablet) {
-        display: none;
-        margin-top:53px;
-
-    }
-    @media (min-width: $desktop) {
-        display: flex;
-        margin-top: 0;
-        margin-left: 50px;
-        margin-right: 50px;
-    } */
-/* }
-
-.menu a{
-    font-size: 21px;
-    line-height: 27px;
-    color: $fonts-color;
-    margin: 0;   
-    text-decoration: none; 
-}
-
-.menu a:hover{
-    color:$active;
-    transition-duration: 0.5s;
-
-}
-
-.menu__item{
-
-    margin: 0;
-    display: inline;
-    margin-right: 70px;
-    color: $fonts-color;
-}
-
-.menu__item a{
-    font-size: 21px;
-    line-height: 27px;
-    color: $fonts-color;
-    text-decoration: none; 
-}
-
-.menu__item a:hover{
-    color: $active;
-} */

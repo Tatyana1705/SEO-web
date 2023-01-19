@@ -1,51 +1,41 @@
 
-
-
 .main-header{
     padding-top: 51px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* @media (min-width:$tablet) {
-        padding-top: 50px;
-    }*/
+
     @media (min-width:$desktop) {
         padding-top: 53px;
         width: 100%;
     } 
 }
 
-
 .main-header__img {
-
-    width: 130px; 
+    width: 130px;
     height: 67px;
-    /* @media (min-width: $desktop) {
-        width: 177px; 
-        height: 91px;
-    } */
 }
 
 .main-header__button{
-    display: none; 
+    display: none;
+
     @media (min-width: $desktop) {
-    display: block;    
-    width: 177px;
-    height: 67px;
-    background: $social-button-border;
-    box-shadow: 2px 2px 0px #3E82B9;
-    border-radius: 10px;
-    border: 0;
-    color:white; 
-    font-size:$font-family; 
+        display: block;
+        width: 177px;
+        height: 67px;
+        background: $social-button-border;
+        box-shadow: 2px 2px 0px #3E82B9;
+        border-radius: 10px;
+        border: 0;
+        color:white;
+        font-size: $font-family;
     }
 }
 
-
-.page-header__nav {
-    display: none;
-    position: relative;
+.page-header {
+    display: block;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
@@ -53,6 +43,7 @@
     height: 462px;
     margin: 0;
     background-color: $submenu-color;
+
     @media (min-width: $desktop) {
         background-color: transparent;
         position: static;
@@ -64,25 +55,25 @@
     }    
 }
 
-//бургерное меню
-
-.menu-burger {
-    
-    height: 16px;
-    width: 37px;
-    position: relative;
-    @media (min-width: $desktop) {
-        display: none;
-    }
-}
-
-
 .main-header__button:active {
     background: $active-button;
 }
 
 .main-header__button:hover {
     background: $active-button;
+}
+
+.main-header__button:disabled {
+    background: $disabled;
+}
+
+.menu-burger {
+    height: 16px;
+    width: 37px;
+    position: relative;
+    @media (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .menu-burger__header {
@@ -93,7 +84,6 @@
 
 .menu-burger__header {
     top: 21px;
-    
 }
 
 .menu-burger__header:after, .menu-burger__header:before {
@@ -114,10 +104,6 @@
 .menu-burger__header:before {
     top: 7px;
 }
-
-/* .menu-burger__header {
-    height: 60px;
-} */
 
 .main-header__menu {
     display: none;
