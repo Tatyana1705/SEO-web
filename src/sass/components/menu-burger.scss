@@ -1,37 +1,35 @@
 .menu-burger {
-    height: 16px;
-    width: 37px;
-    position: relative;
-    @media (min-width: $desktop) {
-        display: none;
-    }
+  height: 16px;
+  width: 37px;
+  position: relative;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .menu-burger__header {
-    width: 37px;
-    height: 3px;
-    background: $fonts-color;
+  width: 37px;
+  height: 3px;
+  background: $fonts-color;
+  top: 21px;
 }
 
-.menu-burger__header {
-    top: 21px;
+.menu-burger__header::after,
+.menu-burger__header::before {
+  display: block;
+  width: 37px;
+  height: 3px;
+  background: $fonts-color;
+  position: absolute;
 }
 
-.menu-burger__header:after, .menu-burger__header:before {
-    display: block;
-    content: '';
-    width: 37px;
-    height: 3px;
-    background: $fonts-color;
-    position: absolute;
+.menu-burger__header::after {
+  top: 14px;
+  left: 0;
+  bottom: 21px;
 }
 
-.menu-burger__header:after {
-    top:14px;
-    left: 0;
-    bottom: 21px;
-}
-
-.menu-burger__header:before {
-    top: 7px;
+.menu-burger__header::before {
+  top: 7px;
 }
