@@ -1,8 +1,8 @@
 .submenu {
-  display: block;
+  display: none;
 
   @media (min-width: $desktop) {
-    display: block;
+    display: none;
     position: absolute;
     top: 128px;
     width: 272px;
@@ -15,8 +15,7 @@
 }
 
 .submenu__item {
-  margin-top: 20px;
-  display: block;
+  display: none;
   list-style-type: none;
   margin-bottom: 15px;
   font-weight: 400;
@@ -24,6 +23,10 @@
   @media (min-width: $desktop) {
     margin-bottom: 30px;
   }
+}
+
+.submenu__item:nth-last-child(n+2) {
+  margin-top: 20px;
 }
 
 .submenu__link {

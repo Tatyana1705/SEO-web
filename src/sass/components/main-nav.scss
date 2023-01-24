@@ -3,11 +3,12 @@
 }
 
 .main-nav__list {
+  display: none;
   margin: 0;
   padding: 105px 40px;
 
   @media (min-width: $desktop) {
-    padding: 0 px;
+    padding: 0;
     display: flex;
   }
 }

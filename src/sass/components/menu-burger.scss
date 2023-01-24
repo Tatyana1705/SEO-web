@@ -13,10 +13,12 @@
   height: 3px;
   background: $fonts-color;
   top: 21px;
+  border: 0;
 }
 
 .menu-burger__header::after,
 .menu-burger__header::before {
+  content: "";
   display: block;
   width: 37px;
   height: 3px;
@@ -25,11 +27,12 @@
 }
 
 .menu-burger__header::after {
-  top: 14px;
+  top: -1px;
   left: 0;
-  bottom: 21px;
+  bottom: 22px;
 }
 
 .menu-burger__header::before {
-  top: 7px;
+  top: 8px;
+  left: 0;
 }
