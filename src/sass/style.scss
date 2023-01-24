@@ -1,7 +1,14 @@
 //global
+
 @import "./global/fonts.scss";
 @import "./global/veriabless.scss";
 @import "./global/mixins.scss";
 @import "./global/global.scss";
 
 //components
+
+@import "./components/main-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/submenu.scss";
+@import "./components/page-header.scss";
+@import "./components/menu-burger.scss";

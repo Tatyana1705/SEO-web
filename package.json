@@ -1,7 +1,7 @@
 {
-    "name": "vashaplatforma",
+    "name": "SEOnika",
     "private": true,
-    "description": "Корпоративный сайт Platforma",
+    "description": "Сайт SEO",
     "devDependencies": {
         "@babel/core": "^7.18.10",
         "@babel/plugin-transform-runtime": "^7.18.10",
@@ -36,7 +36,7 @@
     },
     "scripts": {
         "editorconfig": "editorconfig-cli",
-        "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+        "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
         "test": "npm run editorconfig && npm run stylelint",
         "build": "gulp build",
         "start": "gulp"
