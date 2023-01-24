@@ -1,5 +1,5 @@
 .submenu {
-  display: none;
+  display: block;
 
   @media (min-width: $desktop) {
     display: none;
@@ -15,18 +15,17 @@
 }
 
 .submenu__item {
-  display: none;
   list-style-type: none;
   margin-bottom: 15px;
   font-weight: 400;
 
   @media (min-width: $desktop) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
 .submenu__item:nth-last-child(n+2) {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .submenu__link {
